@@ -16,7 +16,7 @@ def valid_pw(name, pw, h):
     return h == make_pw_hash(name, pw, salt)
 
 """ functions for hasing and checking cookie values """
-SECRET = 'czUv86iAN9GXA3MT'
+SECRET = 'czUv86iAN9GXA3MT' # in real world we would store SECRET separately
 def hash_str(s):
     return hmac.new(SECRET,s).hexdigest()
 
